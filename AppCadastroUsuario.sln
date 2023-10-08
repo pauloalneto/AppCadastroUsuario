@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentation", "1 - Apresentation", "{0ACE6CFD-632C-4446-AEB7-437B9447AD6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Service", "2 - Service", "{7681E39D-38CC-4509-8B14-D1B91FABE44C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Common", "3 - Common", "{58024614-4706-41DB-AD84-9C9B0F8E67AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppCadastroUsuario.Api", "Service\AppCadastroUsuario.Api\AppCadastroUsuario.Api.csproj", "{2FC1855A-5516-4D94-B24B-AC5E5FABA03A}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AppCadastroUsuario-spa-ui", "Apresentation\AppCadastroUsuario-spa-ui\", "{86D7573C-8CAF-4586-9FC6-62A1C1510FC8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62849"
+		Debug.AspNetCompiler.PhysicalPath = "Apresentation\AppCadastroUsuario-spa-ui\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62849\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62849"
+		Release.AspNetCompiler.PhysicalPath = "Apresentation\AppCadastroUsuario-spa-ui\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62849\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62849"
+		SlnRelativePath = "Apresentation\AppCadastroUsuario-spa-ui\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common\Common.csproj", "{AE514B07-DF5F-4492-B2B6-A92CB2BD72CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Test", "4 - Test", "{E8BFC060-7020-4EF7-BF28-3311FD15E16F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCadastroUsuario.Domain.Tests", "Tests\AppCadastroUsuario.Domain.Tests\AppCadastroUsuario.Domain.Tests.csproj", "{54A6C452-5C7B-4A3A-A364-4662431003DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FC1855A-5516-4D94-B24B-AC5E5FABA03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC1855A-5516-4D94-B24B-AC5E5FABA03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC1855A-5516-4D94-B24B-AC5E5FABA03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC1855A-5516-4D94-B24B-AC5E5FABA03A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D7573C-8CAF-4586-9FC6-62A1C1510FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D7573C-8CAF-4586-9FC6-62A1C1510FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D7573C-8CAF-4586-9FC6-62A1C1510FC8}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D7573C-8CAF-4586-9FC6-62A1C1510FC8}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AE514B07-DF5F-4492-B2B6-A92CB2BD72CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE514B07-DF5F-4492-B2B6-A92CB2BD72CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE514B07-DF5F-4492-B2B6-A92CB2BD72CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE514B07-DF5F-4492-B2B6-A92CB2BD72CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A6C452-5C7B-4A3A-A364-4662431003DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A6C452-5C7B-4A3A-A364-4662431003DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A6C452-5C7B-4A3A-A364-4662431003DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A6C452-5C7B-4A3A-A364-4662431003DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FC1855A-5516-4D94-B24B-AC5E5FABA03A} = {7681E39D-38CC-4509-8B14-D1B91FABE44C}
+		{86D7573C-8CAF-4586-9FC6-62A1C1510FC8} = {0ACE6CFD-632C-4446-AEB7-437B9447AD6E}
+		{AE514B07-DF5F-4492-B2B6-A92CB2BD72CC} = {58024614-4706-41DB-AD84-9C9B0F8E67AD}
+		{54A6C452-5C7B-4A3A-A364-4662431003DA} = {E8BFC060-7020-4EF7-BF28-3311FD15E16F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7257DAC4-79A4-4C0C-88C4-170835DF3112}
+	EndGlobalSection
+EndGlobal

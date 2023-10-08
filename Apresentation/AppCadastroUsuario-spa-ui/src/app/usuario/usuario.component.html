@@ -1,0 +1,51 @@
+<section class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-itens-center">
+                <h1>Usuários</h1>
+
+                <div>
+                    <button type="button" class="btn btn-sm btn-outline-primary mx-1" (click)="abrirModalNovoUsuario()"> Novo usuário</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary mx-1" (click)="abrirModalFiltro()">Filtros</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nome</th>
+                                    <th>E-mail</th>
+                                    <th>Login</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of listaUsuarios">
+                                    <td>{{item.id}}</td>
+                                    <td>{{item.nome}}</td>
+                                    <td>{{item.email}}</td>
+                                    <td>{{item.login}}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary mx-1"
+                                            (click)="obterDetalheUsuario(item.id)">Editar</button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                            (click)="excluirUsuario(item.id)">Excluir</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<app-usuario-modal [usuario]="usuario" [(showModal)]="abrirUsuarioModal"
+    (onSalvar)="salvarUsuario($event)"></app-usuario-modal>
+<app-usuario-filter [(showModal)]="abrirFiltroModal" (onFiltrar)="obterListaUsuarios($event)"></app-usuario-filter>

@@ -1,0 +1,59 @@
+<div bsModal #editarUsuarioModal="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="dialog-auto-name">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="dialog-static-name" class="modal-title pull-left">{{usuario.id ? 'Editar usuário' : 'Incluir novo usuário'}}</h4>
+                <button type="button" class="btn-close close pull-right" aria-label="Close"
+                    (click)="fecharModal()">
+                    <span aria-hidden="true" class="visually-hidden">&times;</span>
+                </button>
+            </div>
+            <form (submit)="salvar()" [formGroup]="form" class="was-validated">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" formControlName="nome"
+                                [(ngModel)]="usuario.nome" required>
+                            <div class="invalid-feedback">
+                                O campo Nome é obrigatório!
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" formControlName="email"
+                                [(ngModel)]="usuario.email" required>
+                            <div class="invalid-feedback">
+                                O campo E-mail é obrigatório!
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="form-label">Login</label>
+                            <input type="text" class="form-control" id="login" formControlName="login"
+                                [(ngModel)]="usuario.login" required>
+                            <div class="invalid-feedback">
+                                O campo Login é obrigatório!
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senha" formControlName="senha"
+                                [(ngModel)]="usuario.senha" required>
+                            <div class="invalid-feedback">
+                                O campo Senha é obrigatório!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="fecharModal()">Close</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

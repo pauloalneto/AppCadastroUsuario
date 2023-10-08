@@ -1,0 +1,87 @@
+<div class="container-login">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="../../assets/img/user_access.jpg">
+        </div>
+
+        <div class="col-md-6">
+            <form (submit)="onEfetuarLogin(form.value)" [formGroup]="form"
+                [ngClass]="{'was-validated' : (login?.dirty || login?.touched) && (senha?.dirty || senha?.touched)}">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center">Login</h2>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <label class="form-label">Login</label>
+                        <input type="text" class="form-control" id="login" formControlName="login" required>
+                        <div class="invalid-feedback">
+                            O campo Login é obrigatório!
+                        </div>
+                    </div>
+        
+                    <div class="col-md-12 mt-3">
+                        <label class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha" formControlName="senha" minlength="6"
+                            required>
+                        <div class="invalid-feedback">
+                            O campo Senha é obrigatório!
+                        </div>
+                        <div class="invalid-feedback">
+                            O campo Senha deve conter no mínimo 6 caracteres!
+                        </div>
+                    </div>
+        
+                    <div class="col-12 mt-3">
+                        <button [disabled]="form.invalid" class="btn btn-primary w-100" type="submit">Efetuar
+                            login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>   
+    
+
+ 
+
+    <!-- <div class="login-img p-4">
+        <img src="../../assets/img/user_access.jpg">
+
+        
+    </div>
+
+    <div class="login-form p-4">
+        <form (submit)="onEfetuarLogin(form.value)" [formGroup]="form"
+            [ngClass]="{'was-validated' : (login?.dirty || login?.touched) && (senha?.dirty || senha?.touched)}">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Login</h2>
+                </div>
+                <div class="col-md-12 mt-3">
+                    <label class="form-label">Login</label>
+                    <input type="text" class="form-control" id="login" formControlName="login" required>
+                    <div class="invalid-feedback">
+                        O campo Login é obrigatório!
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-3">
+                    <label class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha" formControlName="senha" minlength="6"
+                        required>
+                    <div class="invalid-feedback">
+                        O campo Senha é obrigatório!
+                    </div>
+                    <div class="invalid-feedback">
+                        O campo Senha deve conter no mínimo 6 caracteres!
+                    </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <button [disabled]="form.invalid" class="btn btn-primary w-100" type="submit">Efetuar
+                        login</button>
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+</div>
